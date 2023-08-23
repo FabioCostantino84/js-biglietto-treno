@@ -7,3 +7,12 @@ va applicato uno sconto del 20% per i minorenni
 va applicato uno sconto del 40% per gli over 65.
 L'output del prezzo finale va stampato in forma umana (ovvero con massimo due decimali, per indicare i centesimi sul prezzo). Questo richiederà un minimo di ricerca nella documentazione di JS.
 */
+
+/* 
+tool:
+-prompt x2
+-number
+-let/const
+-if/else
+-console log
+*/
