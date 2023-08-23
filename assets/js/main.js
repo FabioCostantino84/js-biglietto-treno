@@ -18,8 +18,14 @@ tool:
 */
 
 // chiedere all'utente quanti km deve percorrere
+const distance = Number(prompt('type distance in km'));
+
 // chiedere l'età dell'utente
+const userAge = Number(prompt('type yuor age'));
+console.log(distance, userAge);
+
 // calcolo prezzo intero
 // calcolo prezzo minorenni
 // calcolo prezzo over 65
 // stampo il prezzo del biglietto
+
