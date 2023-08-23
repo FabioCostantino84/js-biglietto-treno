@@ -16,3 +16,10 @@ tool:
 -if/else
 -console log
 */
+
+// chiedere all'utente quanti km deve percorrere
+// chiedere l'età dell'utente
+// calcolo prezzo intero
+// calcolo prezzo minorenni
+// calcolo prezzo over 65
+// stampo il prezzo del biglietto
