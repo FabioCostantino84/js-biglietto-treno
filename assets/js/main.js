@@ -22,23 +22,28 @@ const distance = Number(prompt('type distance in km'));
 
 // chiedere l'età dell'utente
 const userAge = Number(prompt('type yuor age'));
-console.log(distance, userAge);
 
-// calcolo prezzo intero
-const priceKm = Number(0.21);
-const fullPrice = Number(distance * priceKm);
-console.log(fullPrice);
+let totalPrice;
 
-// calcolo prezzo minorenni
-const underDiscount = Number(0.21 * 20 / 100);
-const underPrice = Number(distance * (priceKm - underDiscount));
-document.getElementById ('price').innerHTML = underPrice.toFixed (2);
-console.log(underPrice);
-
-// calcolo prezzo over 65
-const overDiscount = Number(0.21 * 40 / 100);
-const overPrice = Number(distance * (priceKm - overDiscount));
-document.getElementById ('price').innerHTML = overPrice.toFixed (2);
-console.log(overPrice);
+if (userAge < 18) {
+    // calcolo prezzo minorenni
+    const priceKm = Number(0.21);
+    const underDiscount = Number(0.21 * 20 / 100);
+    const totalPrice = Number(distance * (priceKm - underDiscount));
+    document.getElementById('price').innerHTML = totalPrice.toFixed(2);
+    console.log(totalPrice);
+} else if (userAge > 65) {
+    // calcolo prezzo over 65
+    const priceKm = Number(0.21);
+    const overDiscount = Number(0.21 * 40 / 100);
+    const totalPrice = Number(distance * (priceKm - overDiscount));
+    document.getElementById('price').innerHTML = totalPrice.toFixed(2);
+    console.log(totalPrice);
+} else {
+    // calcolo prezzo intero
+    const priceKm = Number(0.21);
+    const totalPrice = Number(distance * priceKm);
+    document.getElementById('price').innerHTML = totalPrice.toFixed(2);
+    console.log(totalPrice);
+}
 // stampo il prezzo del biglietto
-
