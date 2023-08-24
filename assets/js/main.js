@@ -25,14 +25,14 @@ const userAge = Number(prompt('type yuor age'));
 
 let totalPrice;
 
-if (userAge < 18) {
+if (userAge < 18 + 1) {
     // calcolo prezzo minorenni
     const priceKm = Number(0.21);
     const underDiscount = Number(0.21 * 20 / 100);
     const totalPrice = Number(distance * (priceKm - underDiscount));
     document.getElementById('price').innerHTML = totalPrice.toFixed(2);
     console.log(totalPrice);
-} else if (userAge > 65) {
+} else if (userAge > 65 - 1) {
     // calcolo prezzo over 65
     const priceKm = Number(0.21);
     const overDiscount = Number(0.21 * 40 / 100);
